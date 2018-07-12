@@ -15,7 +15,7 @@ grid_size_1 = 40
 
 # Open wood board image and crops it to the desired size 
 image_source = Image.open("images/wood_board.jpg")
-area = (0, 0, grid_size_1*10, grid_size_1*10)
+area = (0, 0, grid_size_1*10, grid_size_1*10) # (initial x, initial y, width, height)
 board = image_source.crop(area)
 
 

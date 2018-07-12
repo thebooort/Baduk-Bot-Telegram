@@ -10,7 +10,15 @@ def grid_to_coords(grid):
 
 #Draw the board
 grid_size = (40,40)
-board = Image.new('RGB', [10*x for x in grid_size], (255,204,153))
+grid_size_1 = 40
+# board = Image.new('RGB', [10*x for x in grid_size], (255,204,153))
+
+# Open wood board image and crops it to the desired size 
+image_source = Image.open("images/wood_board.jpg")
+area = (0, 0, grid_size_1*10, grid_size_1*10)
+board = image_source.crop(area)
+
+
 
 for i in range(1,10):
     i = i * 40

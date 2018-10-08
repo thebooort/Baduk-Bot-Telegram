@@ -102,7 +102,7 @@ class baduk_bot(telepot.Bot):
         return [g for g in self.gamelog.values() if self.is_in_game(g.get_players(), sender_id)]    
  
 
-# this part should call to the match file. Here we should upload all the commands and shit like that
+# This part should call to the match file. Here we should upload all the commands and stuff like that
 
     def on_chat_message(self, msg):
         self.msglog.append(msg)
@@ -161,7 +161,7 @@ print("Bot is online: ", bot.getMe())
 bot.message_loop()
 print("Listening...")
 
-# Keep the program running.
+# Keep the program running
 while 1:
     time.sleep(10)
     bot.save_state() # Save state periodically
